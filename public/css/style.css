@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+@font-face {
+  font-family: customFont;
+  src: url(LaBelleAurore-Regular.ttf);
+}
+.toDo-container{
+  max-height: 100vh;
+  overflow: auto;
+  padding: 50px 15px;
+}
+.main-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toDo-head{
+  text-align: center;
+  font-family: customFont;
+  font-size: 60px;
+}
+.tasks{
+  width: 800px;
+}
+.task{
+  width: 100%;
+  display: grid;
+  grid-template-columns: .1fr 1fr .15fr;
+  align-items: center;
+  box-shadow: 0 0 15px 2px black;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+.actions{
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.edit{
+  background: none;
+  border: none;
+  color: rgba(27, 77, 62, .5);
+}
+.edit:hover{
+  color: rgba(27, 77, 62, 1);
+  cursor: pointer;
+}
+.delete{
+  background: none;
+  border: none;
+  color: rgba(153, 0, 0, .5);
+}
+.delete:hover{
+  color: rgba(153, 0, 0, 1);
+  cursor: pointer;
+}
+.task-text{
+  font-size: 20px;
+  padding: 0 5px;
+}
+.task-number{
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #a0a0a0;
+}
+.task-input{
+  width: 800px;
+  display: flex;
+  align-content: center;
+  margin: 40px 0;
+}
+.task-input form{
+  display: flex;
+  justify-content: center;
+}
+.input-text{
+  font-size: 30px;
+  padding: 5px 15px;
+  width: 700px;
+  margin: 0;
+  background: none;
+  outline: none;
+}
+.input-text:hover{
+  border: 2px solid black;
+  outline: none;
+}
+::placeholder{
+  font-family: customFont;
+  font-weight: bold;
+}
+.btn-add{
+  margin: 0 0 0 5px;
+  padding: 2px;
+  background: none;
+  border: 2px solid black;
+}
+.btn-add:hover{
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+.openEdit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background: rgba(27, 77, 62, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeEdit{
+  display: none;
+}
+.card{
+  width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  box-shadow: 0 0 35px 9px black;
+  border: 1px solid black;
+}
+.btns-form{
+  display: block;
+  padding: 20px 0 10px 0;
+}
+.answ-btn{
+  font-size: 25px;
+  padding: 10px 40px;
+  background: none;
+  border: 1px solid black;
+  margin: 0 5px;
+}
+.answ-btn:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.card-form{
+  text-align: center;
+}
+.heading-card-form{
+  font-family: customFont;
+  font-size: 40px;
+  text-align: center;
+}
+.openDelete{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background: rgba(153, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeDelete{
+  display: none;
+}
+.italic-head{
+  font-style: italic;
+}
